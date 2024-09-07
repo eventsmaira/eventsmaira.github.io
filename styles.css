@@ -26,6 +26,7 @@
     position: relative;
   }
   
+  /* Title */
   .title {
     font-size: 2.8em;
     font-weight: 600;
@@ -100,6 +101,11 @@
   
   /* Responsive Design */
   @media (max-width: 768px) {
+    .container {
+      padding: 30px;
+      margin: 0 15px; /* Horizontal margin for mobile view */
+    }
+  
     .title {
       font-size: 2.2em;
     }
@@ -115,6 +121,11 @@
   }
   
   @media (max-width: 480px) {
+    .container {
+      padding: 25px;
+      margin: 0 10px; /* Slightly reduced margin for smaller screens */
+    }
+  
     .title {
       font-size: 1.8em;
     }
