@@ -1,0 +1,131 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #111;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .container {
+    text-align: center;
+    background: #1e1e1e;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .title {
+    font-size: 2.8em;
+    font-weight: 600;
+    color: #ff0266;
+    margin-bottom: 10px;
+  }
+  
+  .tagline {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .description {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #ddd;
+  }
+  
+  /* LED Strip Element */
+  .led-strip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(90deg, #ff0266, #ffd700, #00ff00, #00ffff);
+    background-size: 200% 100%;
+    animation: animateLED 6s linear infinite;
+  }
+  
+  @keyframes animateLED {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 200% 0%;
+    }
+  }
+  
+  /* WhatsApp Button */
+  .whatsapp-link {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #25d366;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .whatsapp-link:hover {
+    background-color: #1ebf5e;
+  }
+  
+  /* Contact Info */
+  .contact-info {
+    margin-top: 20px;
+    font-size: 1em;
+  }
+  
+  .contact-info a {
+    color: #ffd700;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2.2em;
+    }
+  
+    .tagline {
+      font-size: 1.2em;
+    }
+  
+    .whatsapp-link {
+      font-size: 1em;
+      padding: 10px 25px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 1.8em;
+    }
+  
+    .tagline, .description {
+      font-size: 1em;
+    }
+  
+    .whatsapp-link {
+      font-size: 0.9em;
+      padding: 10px 20px;
+    }
+  }
+  
